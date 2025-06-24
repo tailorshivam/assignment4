@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .jumbotron {
+            margin-top: 50px;
+        }
+
+        .fixed-card {
+            height: 100%;
+        }
+
+        .fixed-card .card-body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">MyApp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#jumbotron">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Jumbotron -->
+        <section class="bg-light py-5 text-center">
+            <div class="jumbotron" id="jumbotron">
+                <h1 class="display-4">Welcome to MyApp</h1>
+                <p class="lead">Experience the next generation of productivity and performance. Fast. Reliable. Sleek.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">Download Now</a>
+            </div>
+        </section>
+
+        <!-- Features Section with Three Cards -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">App Features</h2>
+                <div class="row text-center" id="features">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm fixed-card">
+                            <img src="https://images.unsplash.com/photo-1637243812475-b091b5898e6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="card-img-top" alt="Feature 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature One</h5>
+                                <p class="card-text">
+                                    Unlock lightning-fast performance with our new AI-powered engine. Whether you're
+                                    tracking tasks, managing projects, or staying organized, this feature keeps
+                                    everything smooth and snappy.
+                                </p>
+                                <p class="card-text">
+                                    Real-time syncing across devices and offline capabilities make this feature a
+                                    game-changer for professionals on the move.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm fixed-card">
+                            <img src="https://images.unsplash.com/photo-1637243812475-b091b5898e6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="card-img-top" alt="Feature 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature Two</h5>
+                                <p class="card-text">
+                                    Your data is sacred. With multi-layer encryption, biometric access, and end-to-end
+                                    protection, our app ensures your privacy is never compromised.
+                                </p>
+                                <p class="card-text">
+                                    Customize access levels, audit logs, and set security alerts to always stay in
+                                    control.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm fixed-card">
+                            <img src="https://images.unsplash.com/photo-1637243812475-b091b5898e6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="card-img-top" alt="Feature 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature Three</h5>
+                                <p class="card-text">
+                                    Stay in sync with your team no matter where you are. Built-in messaging, file
+                                    sharing, and voice notes empower collaboration on the go.
+                                </p>
+                                <p class="card-text">
+                                    Integration with Slack, Google Drive, and Zoom makes this feature perfect for hybrid
+                                    teams.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">How It Works</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="mb-3 icon-box">🔍</div>
+                        <h5>Step 1: Discover</h5>
+                        <p>Explore features, customize your setup, and try out the demo.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3 icon-box">⚙️</div>
+                        <h5>Step 2: Configure</h5>
+                        <p>Set your preferences, add your team, and link your tools.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3 icon-box">🚀</div>
+                        <h5>Step 3: Launch</h5>
+                        <p>Start working smarter and tracking results in real time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans Section -->
+        <section class="py-5">
+            <div class="container" id="pricing">
+                <h2 class="text-center mb-4">Pricing Plans</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card border-primary mb-4">
+                            <div class="card-header bg-primary text-white">Free</div>
+                            <div class="card-body">
+                                <h3 class="card-title">$0/month</h3>
+                                <ul class="list-unstyled">
+                                    <li>✔ Basic features</li>
+                                    <li>✔ 1 team member</li>
+                                    <li>✔ Community support</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-success mb-4">
+                            <div class="card-header bg-success text-white">Pro</div>
+                            <div class="card-body">
+                                <h3 class="card-title">$9.99/month</h3>
+                                <ul class="list-unstyled">
+                                    <li>✔ All Free features</li>
+                                    <li>✔ Up to 10 team members</li>
+                                    <li>✔ Email support</li>
+                                </ul>
+                                <a href="#" class="btn btn-success">Upgrade</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-dark mb-4">
+                            <div class="card-header bg-dark text-white">Enterprise</div>
+                            <div class="card-body">
+                                <h3 class="card-title">Contact Us</h3>
+                                <ul class="list-unstyled">
+                                    <li>✔ Unlimited features</li>
+                                    <li>✔ Custom integration</li>
+                                    <li>✔ 24/7 Support</li>
+                                </ul>
+                                <a href="#" class="btn btn-dark">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 MyApp. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms & Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
